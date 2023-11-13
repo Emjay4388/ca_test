@@ -1,5 +1,5 @@
 <?php
-    include_once 'database.php';
+    include_once './database.php';
     session_start();
     if(!(isset($_SESSION['email'])))
     {
@@ -9,7 +9,7 @@
     {
         $name = $_SESSION['name'];
         $email = $_SESSION['email'];
-        include_once 'database.php';
+        include_once './database.php';
     }
 ?>
 
